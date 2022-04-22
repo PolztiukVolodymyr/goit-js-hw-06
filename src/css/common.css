@@ -16,9 +16,30 @@ body {
 input {
   padding: 8px;
   font: inherit;
+ 
 }
 
 button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery {
+  list-style: none;
+  margin: auto;
+  background-color: lightgray;
+ }
+
+
+img {
+  display: block;
+  max-width: 100%;
+  max-hight: 100%;
+}
+
+.gallery__item {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  
+ }
