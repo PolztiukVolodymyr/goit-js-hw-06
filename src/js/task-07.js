@@ -4,8 +4,12 @@ const textEl = document.querySelector("#text");
 
 textEl.style.fontSize = inputEl.value + "px";
 
-inputEl.addEventListener('input', event => {
+const changeText = () => {
 
- textEl.style.fontSize = event.currentTarget.value + "px";
+    inputEl.addEventListener('input', event => {
+    textEl.style.fontSize = event.currentTarget.value + "px";
  
-});
+    });
+}
+
+changeText();
