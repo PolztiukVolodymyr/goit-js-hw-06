@@ -7,11 +7,9 @@ const refs = {
   span: document.querySelector(".color"),
  };
 
-const changeColors = () => {
-  refs.button.addEventListener("click", () => {
-    refs.span.textContent = getRandomHexColor();
-    document.body.style.backgroundColor = getRandomHexColor();
-  });
-};
 
-changeColors();
+refs.button.addEventListener("click", () => {
+  const color = getRandomHexColor();
+  refs.span.textContent = color;
+  document.body.style.backgroundColor = color;
+  });
